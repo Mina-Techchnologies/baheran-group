@@ -18,9 +18,10 @@ const notoEthiopic = Noto_Sans_Ethiopic({
   preload: false,
 });
 
-// Ownership tokens from Google Search Console and Bing Webmaster Tools, if verified by meta tag.
+// Ownership tokens from Google Search Console and Bing Webmaster Tools, if verified by meta tag. They are
+// public (every page shows them), so Bing's lives here. Google is verified by a DNS TXT record instead.
 const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
-const bingVerification = process.env.BING_SITE_VERIFICATION;
+const bingVerification = process.env.BING_SITE_VERIFICATION ?? "362D2A8584B570C11E0BAEAB904F33E3";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
