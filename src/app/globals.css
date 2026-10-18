@@ -147,6 +147,60 @@
     linear-gradient(180deg, #f3f7fc 0%, #ffffff 100%);
 }
 
+/*
+ * A few white sections (about, rental, leadership): a soft wash of the hero's blue light so they
+ * are not flat white. Two glows sit in opposite corners and drift slowly; every other section
+ * mirrors them, so the light alternates down the page. They stay inside the section vertically
+ * and are clipped at the sides.
+ */
+@utility soft-glow {
+  position: relative;
+  isolation: isolate;
+  overflow-x: clip;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: min(64rem, 130vw);
+    height: min(44rem, 85%);
+    pointer-events: none;
+  }
+
+  &::before {
+    top: 0;
+    left: -12%;
+    background: radial-gradient(closest-side, rgb(55 118 186 / 0.3), transparent);
+  }
+
+  &::after {
+    right: -12%;
+    bottom: 0;
+    background: radial-gradient(closest-side, rgb(143 187 232 / 0.4), transparent);
+  }
+
+  &:nth-of-type(even)::before {
+    right: -12%;
+    left: auto;
+  }
+
+  &:nth-of-type(even)::after {
+    right: auto;
+    left: -12%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    &::before {
+      animation: soft-drift-down 28s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate;
+    }
+
+    &::after {
+      animation: soft-drift-up 34s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate;
+    }
+  }
+}
+
 /* Deep navy ground with soft blue glows (dark sections, stats card, footer). */
 @utility glow-dark {
   background:
@@ -374,6 +428,19 @@
 @keyframes route-flow {
   to {
     stroke-dashoffset: -9;
+  }
+}
+
+/* Light-section glows drift inward only, so they never leave their section vertically. */
+@keyframes soft-drift-down {
+  to {
+    translate: 10% 8%;
+  }
+}
+
+@keyframes soft-drift-up {
+  to {
+    translate: -10% -8%;
   }
 }
 

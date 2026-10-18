@@ -15,6 +15,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@fontsource/plus-jakarta-sans": "^5.2.8",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

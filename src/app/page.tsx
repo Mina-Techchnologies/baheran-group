@@ -5,22 +5,21 @@ import { LeadershipSection } from "@/components/LeadershipSection";
 import { RevealObserver } from "@/components/RevealObserver";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SkipLink } from "@/components/SkipLink";
 import { ExportSection } from "@/components/sections/ExportSection";
 import { FleetSection } from "@/components/sections/FleetSection";
 import { ImportSection } from "@/components/sections/ImportSection";
 import { PaintsSection } from "@/components/sections/PaintsSection";
 import { RealEstateSection } from "@/components/sections/RealEstateSection";
 import { RentalSection } from "@/components/sections/RentalSection";
+import { HOME_DESCRIPTION, pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({ description: HOME_DESCRIPTION, path: "/" });
 
 export default function Home() {
   return (
     <>
-      <a
-        href="#main"
-        className="sr-only z-50 rounded-full bg-primary px-5 py-3 font-semibold text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
-      >
-        Skip to content
-      </a>
+      <SkipLink />
       <SiteHeader />
       <main id="main">
         <Hero />

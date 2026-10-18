@@ -12,7 +12,7 @@ export function RentalSection() {
   const machine = RENTAL_MACHINES[selected];
 
   return (
-    <section id="rental" aria-labelledby="rental-title" className="section-pad">
+    <section id="rental" aria-labelledby="rental-title" className="section-pad soft-glow">
       <div className="wrap">
         <SectionHeading
           id="rental-title"

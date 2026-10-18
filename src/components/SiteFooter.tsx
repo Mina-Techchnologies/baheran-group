@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { CONTACT, SKYLINE } from "@/content/company";
 import { Wordmark } from "./Wordmark";
 
@@ -27,11 +29,12 @@ export function SiteFooter() {
             Businesses
           </h2>
           <ul className="mt-5 space-y-2.5">
+            {/* Each business's own page, so every page links to all six. */}
             {SKYLINE.map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="text-white/90 decoration-primary-light underline-offset-4 hover:text-white hover:underline">
+                <Link href={`/${item.href.slice(1)}`} className="text-white/90 decoration-primary-light underline-offset-4 hover:text-white hover:underline">
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

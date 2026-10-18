@@ -48,8 +48,9 @@ export function mailto(subject: string) {
   return `mailto:${CONTACT.email}?subject=${encodeURIComponent(subject)}`;
 }
 
-export const NAV = [
-  { href: "#export", label: "Businesses" },
+/** `businesses` marks the item that opens the submenu of the six businesses in the header. */
+export const NAV: { href: string; label: string; businesses?: boolean }[] = [
+  { href: "#export", label: "Businesses", businesses: true },
   { href: "#company", label: "Company" },
   { href: "#leadership", label: "Leadership" },
 ];

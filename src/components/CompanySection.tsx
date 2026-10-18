@@ -22,7 +22,7 @@ const etb = (value: number) => `ETB ${value.toLocaleString("en-US")}`;
  */
 export function CompanySection() {
   return (
-    <section id="company" aria-labelledby="company-title" className="section-pad">
+    <section id="company" aria-labelledby="company-title" className="section-pad soft-glow">
       <div className="wrap grid gap-4 sm:grid-cols-2 lg:grid-cols-12 lg:gap-5">
         <div data-reveal className="pb-6 sm:col-span-2 lg:col-span-6 lg:row-span-2 lg:pr-10 lg:pb-0">
           <Eyebrow label="About Baheran" />

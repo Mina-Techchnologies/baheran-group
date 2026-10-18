@@ -8,7 +8,7 @@ import { Accent, SectionHeading } from "./SectionHeading";
 
 export function LeadershipSection() {
   return (
-    <section id="leadership" aria-labelledby="leadership-title" className="section-pad">
+    <section id="leadership" aria-labelledby="leadership-title" className="section-pad soft-glow">
       <div className="wrap">
         <SectionHeading
           id="leadership-title"

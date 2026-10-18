@@ -6,8 +6,9 @@ import { useState } from "react";
 import { CONTACT, CONTACT_TOPICS, mailto } from "@/content/company";
 import { Accent, Eyebrow } from "./SectionHeading";
 
-export function ContactSection() {
-  const [topicId, setTopicId] = useState(CONTACT_TOPICS[0].id);
+/** `topic` picks the enquiry selected at first: a business page starts on its own business. */
+export function ContactSection({ topic: initialTopic = CONTACT_TOPICS[0].id }: { topic?: string }) {
+  const [topicId, setTopicId] = useState(initialTopic);
   const topic = CONTACT_TOPICS.find((item) => item.id === topicId) ?? CONTACT_TOPICS[0];
 
   return (
