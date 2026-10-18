@@ -71,43 +71,43 @@ export const SKYLINE: {
     href: "#export",
     label: "Export",
     summary: "Sesame, pulses and beans, cleaned at our own plant",
-    photo: { src: whiteSesame, alt: "White sesame seed in a basket", focus: "55% 50%" },
-    feature: { src: cleaningPlant, alt: "Inside Baheran's grain cleaning plant, with stacked sacks ready for export" },
+    photo: { src: whiteSesame, alt: "Ethiopian white sesame seed in a basket", focus: "55% 50%" },
+    feature: { src: cleaningPlant, alt: "Inside Baheran Trading PLC's grain cleaning plant in Ethiopia, with sacks stacked ready for export" },
   },
   {
     href: "#import",
     label: "Import",
     summary: "Heavy machinery, vehicles, tyres, steel and chemicals",
-    photo: { src: importLoader, alt: "Yellow wheel loaders lined up", focus: "62% 50%" },
-    feature: { src: importLoader, alt: "Row of new yellow wheel loaders" },
+    photo: { src: importLoader, alt: "Yellow wheel loaders, heavy machinery imported into Ethiopia", focus: "62% 50%" },
+    feature: { src: importLoader, alt: "Row of new yellow wheel loaders: heavy machinery that Baheran Trading PLC imports into Ethiopia" },
   },
   {
     href: "#fleet",
     label: "Fleet",
     summary: "80 trucks moving dry and bulk cargo",
-    photo: { src: heavyTruck, alt: "Front of a yellow heavy-duty truck", focus: "50% 50%" },
-    feature: { src: dumpTrucks, alt: "Orange dump trucks from the cargo fleet parked in a row" },
+    photo: { src: heavyTruck, alt: "Front of a yellow heavy-duty cargo truck", focus: "50% 50%" },
+    feature: { src: dumpTrucks, alt: "Orange dump trucks from Baheran Trading PLC's 80-truck cargo fleet, parked in a row" },
   },
   {
     href: "#rental",
     label: "Rental",
     summary: "Cranes, graders, loaders and more for construction",
-    photo: { src: mobileCrane, alt: "Yellow mobile crane on site", focus: "48% 50%" },
-    feature: { src: mobileCrane, alt: "Yellow truck-mounted mobile crane available to rent" },
+    photo: { src: mobileCrane, alt: "Yellow mobile crane for rent in Ethiopia", focus: "48% 50%" },
+    feature: { src: mobileCrane, alt: "Yellow truck-mounted mobile crane, available to rent from Baheran Trading PLC in Ethiopia" },
   },
   {
     href: "#paints",
     label: "Paints",
     summary: "Tsehay Paints, 500+ kinds made in our factory",
-    photo: { src: superEmulsion, alt: "Bucket of Tsehay Super emulsion paint", focus: "50% 50%" },
-    feature: { src: superEmulsion, alt: "Bucket of Tsehay Super emulsion paint", portrait: true },
+    photo: { src: superEmulsion, alt: "Bucket of Tsehay Super emulsion paint, made in Ethiopia", focus: "50% 50%" },
+    feature: { src: superEmulsion, alt: "Bucket of Tsehay Super emulsion paint, made by Baheran Trading PLC at its paint factory in Ethiopia", portrait: true },
   },
   {
     href: "#real-estate",
     label: "Real estate",
     summary: "Eyor Tower on Churchill Road, Addis Ababa",
-    photo: { src: eyorTower, alt: "Eyor Tower, a glass commercial building", focus: "50% 30%" },
-    feature: { src: eyorTower, alt: "Eyor Tower, a glass commercial building on Churchill Road", portrait: true },
+    photo: { src: eyorTower, alt: "Eyor Tower, a commercial building in Addis Ababa", focus: "50% 30%" },
+    feature: { src: eyorTower, alt: "Eyor Tower, Baheran Trading PLC's glass commercial building on Churchill Road, Addis Ababa", portrait: true },
   },
 ];
 
@@ -137,24 +137,24 @@ export const ABOUT = {
   ],
   startPhoto: {
     src: whiteSesame,
-    alt: "White sesame seed in a woven basket",
+    alt: "Ethiopian white sesame in a woven basket, from Baheran Trading PLC's grain and oilseed export business",
     focus: "50% 50%",
   } satisfies Photo,
 };
 
 export const COMMODITIES: { name: string; photo: Photo }[] = [
-  { name: "White sesame", photo: { src: whiteSesame, alt: "White sesame seed in a woven basket" } },
-  { name: "Niger seed", photo: { src: nigerSeed, alt: "Close-up of black niger seed" } },
-  { name: "Chickpeas", photo: { src: chickpeas, alt: "Chickpeas in a scoop", focus: "45% 50%" } },
-  { name: "Mung beans", photo: { src: mungBeans, alt: "Green mung beans in a white bowl", focus: "62% 50%" } },
-  { name: "White pea beans", photo: { src: whitePeaBeans, alt: "White pea beans in a wooden spoon" } },
-  { name: "Red kidney beans", photo: { src: redKidneyBeans, alt: "Close-up of red kidney beans" } },
-  { name: "Soybeans", photo: { src: soybeans, alt: "Close-up of soybeans" } },
+  { name: "White sesame", photo: { src: whiteSesame, alt: "Ethiopian white sesame seed in a woven basket, Baheran Trading PLC's leading export" } },
+  { name: "Niger seed", photo: { src: nigerSeed, alt: "Close-up of black Ethiopian niger seed for export" } },
+  { name: "Chickpeas", photo: { src: chickpeas, alt: "Ethiopian chickpeas in a scoop, ready for export", focus: "45% 50%" } },
+  { name: "Mung beans", photo: { src: mungBeans, alt: "Green mung beans in a white bowl, a pulse exported from Ethiopia", focus: "62% 50%" } },
+  { name: "White pea beans", photo: { src: whitePeaBeans, alt: "White pea beans in a wooden spoon, exported from Ethiopia" } },
+  { name: "Red kidney beans", photo: { src: redKidneyBeans, alt: "Close-up of red kidney beans exported from Ethiopia" } },
+  { name: "Soybeans", photo: { src: soybeans, alt: "Close-up of Ethiopian soybeans for export" } },
 ];
 
 export const CLEANING_PLANT: Photo = {
   src: cleaningPlant,
-  alt: "Inside Baheran's grain cleaning plant, with cleaning machines, a storage hopper and stacked red sacks",
+  alt: "Baheran Trading PLC's sesame cleaning plant in Ethiopia: cleaning machines, a storage hopper and stacked red sacks",
 };
 
 export const IMPORT_LINES: { name: string; note?: string }[] = [
@@ -166,63 +166,63 @@ export const IMPORT_LINES: { name: string; note?: string }[] = [
 ];
 
 export const IMPORT_PHOTOS: Record<"loader" | "pickup" | "tyre" | "rebar", Photo> = {
-  loader: { src: importLoader, alt: "Row of yellow wheel loaders", focus: "60% 50%" },
-  pickup: { src: pickup, alt: "Blue double-cab pickup truck", focus: "55% 60%" },
-  tyre: { src: tyre, alt: "Heavy truck tyre with a deep tread" },
-  rebar: { src: rebar, alt: "Close-up of ribbed steel reinforcement bars", focus: "50% 40%" },
+  loader: { src: importLoader, alt: "Row of yellow wheel loaders: construction machinery that Baheran Trading PLC imports into Ethiopia", focus: "60% 50%" },
+  pickup: { src: pickup, alt: "Blue double-cab pickup truck, one of the motor vehicles imported into Ethiopia", focus: "55% 60%" },
+  tyre: { src: tyre, alt: "Heavy truck tyre with a deep tread, imported for trucks and heavy machinery in Ethiopia" },
+  rebar: { src: rebar, alt: "Close-up of ribbed reinforcement steel bars, imported for building and civil works in Ethiopia", focus: "50% 40%" },
 };
 
 export const FLEET_PHOTOS: Record<"dumpTrucks" | "tippers" | "heavyTruck", Photo> = {
-  dumpTrucks: { src: dumpTrucks, alt: "Three orange dump trucks parked in a row" },
-  tippers: { src: tipperTrucks, alt: "Row of white eight-wheel tipper trucks", focus: "35% 50%" },
-  heavyTruck: { src: heavyTruck, alt: "Yellow heavy-duty truck seen from the front", focus: "50% 45%" },
+  dumpTrucks: { src: dumpTrucks, alt: "Three orange dump trucks from Baheran Trading PLC's cargo fleet, parked in a row" },
+  tippers: { src: tipperTrucks, alt: "Row of white eight-wheel tipper trucks for bulk cargo transport in Ethiopia", focus: "35% 50%" },
+  heavyTruck: { src: heavyTruck, alt: "Yellow heavy-duty cargo truck seen from the front, part of the fleet for dry cargo", focus: "50% 45%" },
 };
 
 export const RENTAL_MACHINES: { name: string; use: string; photo: Photo }[] = [
   {
     name: "Mobile cranes",
     use: "Lifting and placing heavy loads on site",
-    photo: { src: mobileCrane, alt: "Yellow truck-mounted mobile crane on a dirt site" },
+    photo: { src: mobileCrane, alt: "Yellow truck-mounted mobile crane on a dirt site, for rent from Baheran Trading PLC" },
   },
   {
     name: "Motor graders",
     use: "Levelling and shaping road beds",
-    photo: { src: motorGrader, alt: "Yellow motor grader parked on a gravel yard" },
+    photo: { src: motorGrader, alt: "Yellow motor grader for rent in Ethiopia, parked on a gravel yard" },
   },
   {
     name: "Wheel loaders",
     use: "Loading soil, gravel and aggregate",
-    photo: { src: rentalLoader, alt: "Red wheel loader with its bucket raised", focus: "50% 45%" },
+    photo: { src: rentalLoader, alt: "Red wheel loader with its bucket raised, available to rent for construction", focus: "50% 45%" },
   },
   {
     name: "Bulldozers",
     use: "Clearing ground and pushing earth",
-    photo: { src: bulldozers, alt: "Row of yellow crawler bulldozers" },
+    photo: { src: bulldozers, alt: "Row of yellow crawler bulldozers for heavy equipment rental in Ethiopia" },
   },
   {
     name: "Road rollers",
     use: "Compacting soil and fresh asphalt",
-    photo: { src: roadRoller, alt: "Road roller compacting fresh asphalt", focus: "45% 50%" },
+    photo: { src: roadRoller, alt: "Road roller compacting fresh asphalt; road rollers are among the machines for rent", focus: "45% 50%" },
   },
 ];
 
 export const PAINTS: { name: string; kind: string; photo: Photo }[] = [
-  { name: "Tsehay Super", kind: "Emulsion paint", photo: { src: superEmulsion, alt: "Bucket of Tsehay Super emulsion paint" } },
-  { name: "Tsehay Super", kind: "Emulsion and plastic paint", photo: { src: superPlastic, alt: "Bucket of Tsehay Super emulsion and plastic paint" } },
-  { name: "Tsehay Fana", kind: "Ceiling paint", photo: { src: fana, alt: "Bucket of Tsehay Fana ceiling paint" } },
-  { name: "Tsehay Quartz", kind: "Textured emulsion wall paint", photo: { src: quartz, alt: "Bucket of Tsehay Quartz textured wall paint" } },
-  { name: "Tsehay Enamel", kind: "Synthetic enamel paint", photo: { src: enamel, alt: "Tin of Tsehay Enamel synthetic paint" } },
-  { name: "Tsehay Glue", kind: "Super adhesive", photo: { src: glue, alt: "Bucket of Tsehay Glue super adhesive" } },
+  { name: "Tsehay Super", kind: "Emulsion paint", photo: { src: superEmulsion, alt: "Bucket of Tsehay Super emulsion paint, made in Ethiopia by Baheran Trading PLC" } },
+  { name: "Tsehay Super", kind: "Emulsion and plastic paint", photo: { src: superPlastic, alt: "Bucket of Tsehay Super emulsion and plastic paint from the Tsehay Paints factory" } },
+  { name: "Tsehay Fana", kind: "Ceiling paint", photo: { src: fana, alt: "Bucket of Tsehay Fana ceiling paint, made in Ethiopia" } },
+  { name: "Tsehay Quartz", kind: "Textured emulsion wall paint", photo: { src: quartz, alt: "Bucket of Tsehay Quartz textured wall paint, made in Ethiopia" } },
+  { name: "Tsehay Enamel", kind: "Synthetic enamel paint", photo: { src: enamel, alt: "Tin of Tsehay Enamel synthetic enamel paint by Tsehay Paints" } },
+  { name: "Tsehay Glue", kind: "Super adhesive", photo: { src: glue, alt: "Bucket of Tsehay Glue super adhesive by Tsehay Paints" } },
 ];
 
 export const PAINT_CERTIFICATIONS: Photo = {
   src: certifications,
-  alt: "ISOQAR Registered and UKAS Product Certification 0026 marks",
+  alt: "ISOQAR Registered and UKAS Product Certification 0026 marks carried by Tsehay Paints products",
 };
 
 export const EYOR_TOWER: Photo = {
   src: eyorTower,
-  alt: "Eyor Tower, a glass-fronted commercial building on Churchill Road, Addis Ababa",
+  alt: "Eyor Tower, Baheran Trading PLC's glass-fronted commercial building on Churchill Road at Tewodros Square, Addis Ababa",
 };
 
 export const PRINCIPALS: { name: string; role: string; bio: string }[] = [

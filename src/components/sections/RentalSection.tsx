@@ -58,7 +58,8 @@ export function RentalSection() {
                 <Image
                   key={item.name}
                   src={item.photo.src}
-                  alt={i === selected ? item.photo.alt : ""}
+                  // Every photo keeps its alt for search engines; aria-hidden keeps screen readers on the shown one.
+                  alt={item.photo.alt}
                   aria-hidden={i !== selected}
                   fill
                   quality={90}

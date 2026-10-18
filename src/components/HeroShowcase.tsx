@@ -89,7 +89,7 @@ export function HeroShowcase() {
                   >
                     <Image
                       src={feature.src}
-                      alt={shown ? feature.alt : ""}
+                      alt={feature.alt}
                       fill
                       quality={90}
                       sizes="(min-width: 1024px) 260px, 45vw"
@@ -99,7 +99,8 @@ export function HeroShowcase() {
                 ) : (
                   <Image
                     src={feature.src}
-                    alt={shown ? feature.alt : ""}
+                    // Hidden slides keep their alt for search engines; aria-hidden above keeps screen readers on the shown one.
+                    alt={feature.alt}
                     fill
                     quality={90}
                     loading={i === INITIAL ? "eager" : undefined}
