@@ -4,6 +4,9 @@ import { BUSINESS_SLUGS } from "@/content/business-pages";
 import { SKYLINE } from "@/content/company";
 import { absoluteUrl } from "@/lib/seo";
 
+// The site is a static export, which only writes out route handlers marked static.
+export const dynamic = "force-static";
+
 /**
  * Every page, with its main photos so they can appear in image search. lastModified is left out:
  * Google only trusts it when it changes exactly when the page does.

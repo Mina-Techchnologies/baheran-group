@@ -24,6 +24,9 @@ const AI_CRAWLERS = [
   "CCBot",
 ];
 
+// The site is a static export, which only writes out route handlers marked static.
+export const dynamic = "force-static";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [

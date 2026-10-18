@@ -3,6 +3,8 @@ import { SHARE_CARD_SIZE, businessShareAlt, businessShareCard } from "@/lib/shar
 export const alt = businessShareAlt("fleet");
 export const size = SHARE_CARD_SIZE;
 export const contentType = "image/png";
+// The site is a static export, which only writes out route handlers marked static.
+export const dynamic = "force-static";
 
 export default function Image() {
   return businessShareCard("fleet");

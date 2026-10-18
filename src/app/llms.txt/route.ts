@@ -41,6 +41,9 @@ ${businesses.join("\n")}
 `;
 }
 
+// The site is a static export, which only writes out route handlers marked static.
+export const dynamic = "force-static";
+
 export function GET() {
   return new Response(body(), { headers: { "Content-Type": "text/plain; charset=utf-8" } });
 }
