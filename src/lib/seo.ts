@@ -10,9 +10,16 @@ import { ABOUT, CONTACT, PRINCIPALS, SKYLINE } from "@/content/company";
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://baherangroup.com").replace(/\/$/, "");
 export const SITE_NAME = "Baheran Trading PLC";
 
-export const HOME_TITLE = "Baheran Trading PLC | Ethiopian Export, Import and Manufacturing";
+/**
+ * Other names people search for. Baheran Trading PLC is the registered name; Baheran Group is only the
+ * domain and email name, so it goes in structured data and never on the page as the company's name.
+ */
+export const BRAND_ALIASES = ["Baheran Trading", "Baheran", "Baheran Group"];
+
+// The registered name first, then what the company does, so searches for any of its sectors match.
+export const HOME_TITLE = "Baheran Trading PLC | Import, Export & Manufacturing in Ethiopia";
 export const HOME_DESCRIPTION =
-  "Baheran Trading PLC of Addis Ababa exports Ethiopian sesame and pulses, imports machinery, runs 80 cargo trucks, rents heavy equipment and makes Tsehay Paints.";
+  "Baheran Trading PLC, Ethiopia: sesame and pulse export, machinery import, Tsehay Paints manufacturing, cargo transport, equipment rental and real estate.";
 
 const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -55,7 +62,7 @@ export function siteJsonLd() {
         "@id": ORGANIZATION_ID,
         name: SITE_NAME,
         legalName: SITE_NAME,
-        alternateName: ["Baheran Trading", "Baheran Group"],
+        alternateName: BRAND_ALIASES,
         url: SITE_URL,
         logo: { "@type": "ImageObject", url: `${SITE_URL}/apple-icon.png`, width: 180, height: 180 },
         description: HOME_DESCRIPTION,
@@ -73,6 +80,7 @@ export function siteJsonLd() {
         memberOf: ABOUT.credentials
           .filter((item) => item.term === "Member of")
           .map((item) => ({ "@type": "Organization", name: item.detail })),
+        areaServed: { "@type": "Country", name: "Ethiopia" },
         brand: { "@type": "Brand", name: "Tsehay Paints" },
         employee: PRINCIPALS.map((person) => ({
           "@type": "Person",
@@ -80,6 +88,8 @@ export function siteJsonLd() {
           jobTitle: person.role.replace(/ and shareholder$/, ""),
         })),
         knowsAbout: [
+          "Import and export in Ethiopia",
+          "Manufacturing in Ethiopia",
           "Sesame export",
           "Pulses and beans export",
           "Heavy machinery import",
@@ -94,6 +104,8 @@ export function siteJsonLd() {
         "@id": WEBSITE_ID,
         url: SITE_URL,
         name: SITE_NAME,
+        // Google picks the site name it shows in results from these.
+        alternateName: BRAND_ALIASES,
         description: HOME_DESCRIPTION,
         publisher: { "@id": ORGANIZATION_ID },
         inLanguage: "en",

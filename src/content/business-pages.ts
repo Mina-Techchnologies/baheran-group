@@ -167,9 +167,9 @@ export const BUSINESS_PAGES: Record<BusinessSlug, BusinessPage> = {
   },
 
   paints: {
-    title: "Tsehay Paints: Paint Factory in Ethiopia",
+    title: "Tsehay Paints: Paint Manufacturer in Ethiopia",
     description:
-      "Tsehay Paints, made by Baheran Trading PLC in Ethiopia: 500+ kinds of emulsion, plastic, ceiling, textured and enamel paint, up to 10 million litres a year.",
+      "Tsehay Paints, made at Baheran Trading PLC's paint factory in Ethiopia: 500+ kinds of emulsion, plastic and enamel paint, up to 10 million litres a year.",
     heading: { lead: "Paints and wall coatings,", accent: "made in Ethiopia" },
     intro:
       "Tsehay Paints Factory, owned by Baheran Trading PLC, makes more than 500 kinds of paint and paint-related products, up to 10 million litres a year, for households, large construction companies and real estate developers.",
@@ -205,7 +205,7 @@ export const BUSINESS_PAGES: Record<BusinessSlug, BusinessPage> = {
   },
 
   "real-estate": {
-    title: "Eyor Tower, Churchill Road, Addis Ababa",
+    title: "Eyor Tower: Commercial Real Estate in Addis Ababa",
     description:
       "Eyor Tower is Baheran Trading PLC's newly completed commercial building on Churchill Road at Tewodros Square, in the centre of Addis Ababa.",
     heading: { lead: "Commercial real estate in", accent: "central Addis Ababa" },

@@ -11,14 +11,22 @@ export function Hero() {
       <div className="wrap relative grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-14">
         <div className="lg:col-span-6">
           {/* Load sequence: .enter elements fade up in --i order (globals.css). */}
-          <h1 id="hero-title" className="display-xl enter max-w-[14ch] [--i:0]">
-            From sesame fields to the <Accent>Addis skyline</Accent>
+          {/* The small line carries the names and phrase people search for; the headline stays the slogan. */}
+          <h1 id="hero-title">
+            <span className="eyebrow enter flex items-center gap-3 text-primary-dark [--i:0]">
+              <span aria-hidden="true" className="h-px w-8 shrink-0 bg-primary" />
+              Baheran Trading PLC&nbsp;· Import, export and manufacturing in Ethiopia
+            </span>
+            <span className="sr-only">: </span>
+            <span className="display-xl enter mt-5 block max-w-[14ch] [--i:0]">
+              From sesame fields to the <Accent>Addis skyline</Accent>
+            </span>
           </h1>
           <p className="lede enter mt-6 max-w-136 text-muted [--i:1]">
-            Baheran Trading PLC exports Ethiopian sesame and pulses, imports the machinery that
-            builds roads, runs 80 cargo trucks, rents out heavy equipment, makes Tsehay Paints and
-            owns Eyor Tower on Churchill Road. A family-owned company, founded in Addis Ababa in
-            2009.
+            Baheran Trading PLC is a family-owned import, export and manufacturing company, founded
+            in Addis Ababa in 2009. It exports Ethiopian sesame and pulses, imports the machinery that
+            builds roads, runs 80 cargo trucks, rents out heavy equipment, makes Tsehay Paints in its
+            own factory and owns Eyor Tower on Churchill Road.
           </p>
           <div className="enter mt-9 flex flex-wrap items-center gap-3 [--i:2]">
             <a

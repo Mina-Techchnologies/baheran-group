@@ -18,7 +18,8 @@ export function SiteFooter() {
         <div className="md:col-span-5">
           <Wordmark tone="light" />
           <p className="mt-6 max-w-104 text-[0.9375rem] text-subtle">
-            Founded in Addis Ababa in 2009. Licensed by the Ministry of Trade for import and export.
+            Baheran Trading PLC is an Ethiopian import, export and manufacturing company, founded in
+            Addis Ababa in 2009. Licensed by the Ministry of Trade for import and export.
             Member of the Ethiopian Commodity Exchange and the Addis Ababa Chamber of Commerce and
             Sectoral Association.
           </p>

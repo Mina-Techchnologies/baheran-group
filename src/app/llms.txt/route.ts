@@ -1,6 +1,6 @@
 import { BUSINESS_PAGES, BUSINESS_SLUGS } from "@/content/business-pages";
 import { ABOUT, CONTACT, PRINCIPALS } from "@/content/company";
-import { absoluteUrl, SITE_NAME } from "@/lib/seo";
+import { absoluteUrl, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 /**
  * /llms.txt (https://llmstxt.org): a plain summary of the company with links to every page, for AI
@@ -16,7 +16,7 @@ function body() {
 
   return `# ${SITE_NAME}
 
-> ${SITE_NAME} is a family-owned private limited company in Addis Ababa, Ethiopia, founded in October 2009. It exports Ethiopian sesame and pulses, imports heavy machinery and vehicles, runs a fleet of 80 cargo trucks, rents heavy construction equipment, makes Tsehay Paints and owns Eyor Tower on Churchill Road.
+> ${SITE_NAME} is a family-owned import, export and manufacturing company in Addis Ababa, Ethiopia, founded in October 2009. It exports Ethiopian sesame and pulses, imports heavy machinery and vehicles, runs a fleet of 80 cargo trucks, rents heavy construction equipment, makes Tsehay Paints and owns Eyor Tower on Churchill Road.
 
 Key facts:
 
@@ -27,6 +27,7 @@ ${ABOUT.credentials.map((item) => `- ${item.term}: ${item.detail}`).join("\n")}
 ${PRINCIPALS.map((person) => `- ${person.role}: ${person.name}`).join("\n")}
 - Head office: ${CONTACT.addressLines.join(", ")}
 - Email: ${CONTACT.email}
+- Website: ${SITE_URL} (the domain and email use the name Baheran Group; the registered company name is ${SITE_NAME})
 
 ## Businesses
 
