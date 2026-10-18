@@ -36,13 +36,12 @@ export type Photo = {
   focus?: string;
 };
 
-// TODO: the company profile gives no phone number, email or head-office address.
-// Replace these placeholders with the real details before going live.
+// TODO: the phone number is still a placeholder. Replace it with the real one before going live.
 export const CONTACT = {
-  email: "info@example.com",
+  email: "support@baherangroup.com",
   phone: "+251 00 000 0000",
   phoneHref: "tel:+251000000000",
-  addressLines: ["Eyor Tower, Churchill Road", "Tewodros Square, Addis Ababa", "Ethiopia"],
+  addressLines: ["Maseltegna, Akaki Kaliti", "Delta Complex, 10th floor", "Addis Ababa, Ethiopia"],
 };
 
 export function mailto(subject: string) {

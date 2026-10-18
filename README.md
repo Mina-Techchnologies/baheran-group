@@ -25,9 +25,9 @@ npm run lint
 
 ## Before going live
 
-- **Contact details are placeholders.** The profile has no phone number, email or head-office address.
-  Replace `CONTACT` in `src/content/company.ts`. Every "Start an email" and "Ask about…" link uses that
-  email address.
+- **The phone number is a placeholder.** The email (support@baherangroup.com) and head-office address
+  (Delta Complex, Akaki Kaliti) are real. Replace `phone` and `phoneHref` in `CONTACT` in
+  `src/content/company.ts`. Every "Start an email" and "Ask about…" link uses the `CONTACT` email address.
 - **Photos.** The photos come from the Word version of the profile, which stores them at about twice the
   PDF's resolution. They are still small (400–1000px wide), so the layout never shows any of them very
   large. Sharper originals can be swapped in at the same paths under `src/assets/images/` without

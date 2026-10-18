@@ -55,7 +55,20 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="wrap relative">
-        <p className="border-t border-white/12 py-6 text-sm text-subtle">&copy; Baheran Trading PLC</p>
+        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-t border-white/12 py-6 text-sm text-subtle">
+          <p>&copy; Baheran Trading PLC</p>
+          <p>
+            Developed by{" "}
+            <a
+              href="https://www.minatechnologies.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white/90 decoration-primary-light underline-offset-4 hover:text-white hover:underline"
+            >
+              Mina Technologies
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
