@@ -35,7 +35,7 @@ export function ExecutiveTeam() {
           <CountUp value={String(totalYears)} />
         </p>
         <p className="mt-3 max-w-[18rem] font-semibold leading-snug">
-          years of combined experience in business, banking and accounting
+          years of combined experience in business, banking, manufacturing and finance
         </p>
         <dl className="mt-8 grid grid-cols-2 gap-4 border-t border-white/12 pt-6">
           <div>

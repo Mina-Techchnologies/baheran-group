@@ -239,7 +239,7 @@ export const PRINCIPALS: { name: string; role: string; bio: string }[] = [
   {
     name: "Dessie Alemu",
     role: "Deputy General Manager and shareholder",
-    bio: "Ato Dessie spent sixteen years in banking in a range of management roles. He looks after the company's banking, risk and loan services, export sales to international buyers and international correspondence.",
+    bio: "Ato Dessie spent twenty years in banking in a range of management roles, and has held senior management roles in the petroleum, manufacturing and real estate industries. He looks after the company's banking, risk and loan services, export sales to international buyers and international correspondence.",
   },
 ];
 
@@ -253,6 +253,7 @@ export type Executive = {
   shareholder?: boolean;
 };
 
+/** From the Management Profile (November 2026), in its order. */
 export const EXECUTIVES: Executive[] = [
   {
     name: "Ato Abebe Alemu",
@@ -262,42 +263,56 @@ export const EXECUTIVES: Executive[] = [
     shareholder: true,
   },
   {
-    name: "Ato Dessie Alemu",
-    position: "Deputy General Manager",
-    education: ["MBA in Project Management", "BA in Management"],
-    experience: { years: 16, detail: "In banking, in managerial roles" },
+    name: "Ato Hibret Shitahun",
+    position: "General Manager",
+    education: ["Completed high school"],
+    experience: { years: 20, detail: "In business" },
     shareholder: true,
   },
   {
-    name: "Ato Hibret Shitahun",
-    position: "General Manager",
-    education: ["Secondary school"],
-    experience: { years: 20, detail: "In business" },
+    name: "Ato Dessie Alemu",
+    position: "Deputy General Manager",
+    education: ["MA in Project Management", "BA in Business Administration"],
+    experience: {
+      years: 20,
+      detail: "In banking management, and in senior management in the petroleum, manufacturing and real estate industries",
+    },
     shareholder: true,
   },
   {
     name: "Ato Kassa Hailu",
     position: "Corporate Operations Director",
-    education: ["BA in Accounting"],
-    experience: { years: 25, detail: "As an accountant in various companies" },
+    education: [
+      "MA in Business Administration",
+      "BSc in Chemical Engineering",
+      "BSc in Management Information Systems",
+      "Advanced Diploma in Industrial Chemistry",
+    ],
+    experience: {
+      years: 26,
+      detail: "As corporate operations director, factory manager, quality head, production and technical supervisor, and chemist",
+    },
   },
   {
     name: "W/ro Yetnayet Kifle",
     position: "Finance and Accounts Manager",
-    education: [],
-    experience: null,
+    education: ["BA in Accounting"],
+    experience: {
+      years: 15,
+      detail: "As finance manager, general accounts manager, cost and division manager, deputy finance manager and senior accountant",
+    },
   },
   {
-    name: "W/ro Selamawit",
+    name: "W/ro Selamawit Yeshetila",
     position: "Senior HR Officer",
-    education: ["BA in Law"],
-    experience: { years: 6, detail: "In various companies" },
+    education: ["BA in Business Management"],
+    experience: { years: 5, detail: "In HR management" },
   },
   {
-    name: "Ato Demelash Berihun",
+    name: "Ato Demelash Berihenu",
     position: "Commercial Manager",
     education: ["BA in Economics"],
-    experience: { years: 18, detail: "In banking" },
+    experience: { years: 15, detail: "In banking and import-export trading" },
   },
 ];
 
