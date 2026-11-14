@@ -42,7 +42,7 @@ npm run lint
   4. Add the company to [Google Business Profile](https://business.google.com) with the same name and
      address, so it shows in Maps and local results.
 
-- **Contact details** (phone +251 111 56 65 99, support@baherangroup.com, head office at Delta Complex,
+- **Contact details** (phone +251 111 56 62 99, support@baherangroup.com, head office at Delta Complex,
   Akaki Kaliti) live in `CONTACT` in `src/content/company.ts`. The page, the structured data and
   `llms.txt` all read them from there. Every "Start an email" and "Ask about…" link uses the `CONTACT`
   email address.

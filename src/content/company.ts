@@ -38,8 +38,8 @@ export type Photo = {
 
 export const CONTACT = {
   email: "support@baherangroup.com",
-  phone: "+251 111 56 65 99",
-  phoneHref: "tel:+251111566599",
+  phone: "+251 111 56 62 99",
+  phoneHref: "tel:+251111566299",
   addressLines: ["Maseltegna, Akaki Kaliti", "Delta Complex, 10th floor", "Addis Ababa, Ethiopia"],
 };
 
