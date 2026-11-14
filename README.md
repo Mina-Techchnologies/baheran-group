@@ -42,11 +42,10 @@ npm run lint
   4. Add the company to [Google Business Profile](https://business.google.com) with the same name and
      address, so it shows in Maps and local results.
 
-- **The phone number is a placeholder.** The email (support@baherangroup.com) and head-office address
-  (Delta Complex, Akaki Kaliti) are real. Replace `phone` and `phoneHref` in `CONTACT` in
-  `src/content/company.ts`. Every "Start an email" and "Ask about…" link uses the `CONTACT` email address.
-  While the number is all zeros it is left out of the structured data and `llms.txt`; it is added
-  automatically once it is real.
+- **Contact details** (phone +251 111 56 65 99, support@baherangroup.com, head office at Delta Complex,
+  Akaki Kaliti) live in `CONTACT` in `src/content/company.ts`. The page, the structured data and
+  `llms.txt` all read them from there. Every "Start an email" and "Ask about…" link uses the `CONTACT`
+  email address.
 - **Photos.** The photos come from the Word version of the profile, which stores them at about twice the
   PDF's resolution. They are still small (400–1000px wide), so the layout never shows any of them very
   large. Sharper originals can be swapped in at the same paths under `src/assets/images/` without

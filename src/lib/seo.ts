@@ -49,9 +49,6 @@ export function pageMetadata({ title, description, path }: { title?: string; des
   };
 }
 
-// The phone number in CONTACT is still a placeholder (all zeros). Keep it out of search engines until it is real.
-const telephone = /^tel:\+2510+$/.test(CONTACT.phoneHref) ? undefined : CONTACT.phone;
-
 /** The company and the website, given to search engines and AI assistants on every page. */
 export function siteJsonLd() {
   return {
@@ -69,14 +66,14 @@ export function siteJsonLd() {
         foundingDate: "2009-10",
         foundingLocation: { "@type": "Place", name: "Addis Ababa, Ethiopia" },
         email: CONTACT.email,
-        telephone,
+        telephone: CONTACT.phone,
         address: {
           "@type": "PostalAddress",
           streetAddress: "Delta Complex, 10th floor, Maseltegna, Akaki Kaliti",
           addressLocality: "Addis Ababa",
           addressCountry: "ET",
         },
-        contactPoint: { "@type": "ContactPoint", contactType: "customer service", email: CONTACT.email, telephone },
+        contactPoint: { "@type": "ContactPoint", contactType: "customer service", email: CONTACT.email, telephone: CONTACT.phone },
         memberOf: ABOUT.credentials
           .filter((item) => item.term === "Member of")
           .map((item) => ({ "@type": "Organization", name: item.detail })),

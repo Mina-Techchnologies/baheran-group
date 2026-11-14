@@ -26,6 +26,7 @@ Key facts:
 ${ABOUT.credentials.map((item) => `- ${item.term}: ${item.detail}`).join("\n")}
 ${PRINCIPALS.map((person) => `- ${person.role}: ${person.name}`).join("\n")}
 - Head office: ${CONTACT.addressLines.join(", ")}
+- Phone: ${CONTACT.phone}
 - Email: ${CONTACT.email}
 - Website: ${SITE_URL} (the domain and email use the name Baheran Group; the registered company name is ${SITE_NAME})
 
@@ -38,7 +39,7 @@ ${businesses.join("\n")}
 - [Home](${absoluteUrl("/")}): all six businesses on one page, with key figures
 - [About Baheran](${absoluteUrl("/#company")}): history, paid-up capital, licences and memberships
 - [Leadership](${absoluteUrl("/#leadership")}): managing director, general manager, executive team and organisation chart
-- [Contact](${absoluteUrl("/#contact")}): email and head office address
+- [Contact](${absoluteUrl("/#contact")}): phone, email and head office address
 `;
 }
 

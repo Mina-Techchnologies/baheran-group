@@ -36,11 +36,10 @@ export type Photo = {
   focus?: string;
 };
 
-// TODO: the phone number is still a placeholder. Replace it with the real one before going live.
 export const CONTACT = {
   email: "support@baherangroup.com",
-  phone: "+251 00 000 0000",
-  phoneHref: "tel:+251000000000",
+  phone: "+251 111 56 65 99",
+  phoneHref: "tel:+251111566599",
   addressLines: ["Maseltegna, Akaki Kaliti", "Delta Complex, 10th floor", "Addis Ababa, Ethiopia"],
 };
 
